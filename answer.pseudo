@@ -1,0 +1,14 @@
+public class TestMain{
+  
+  public static void main(String[] args){
+    System.out.println(new TestMain().genRandomNo("Chaitra")); 
+  
+}
+   String genRandomNo(String name){
+    int lNo=6;
+    int hNo=15;
+    java.util.Random r =new java.util.Random();
+    int res = r.nextInt(hNo-lNo) + lNo;
+    return name+res;
+  }
+}
